@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YONO ZONE | Official APK Hub</title>
+    <style>
+        :root {
+            --brand-red: #ff0000;
+            --dark-bg: #0b0b0b;
+            --card-bg: #1a1a1a;
+            --card-hover: #252525;
+            --text-gold: #ffcc00;
+            --white: #ffffff;
+            --muted-gray: #777777;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--white);
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 10px;
+            background: linear-gradient(to bottom, #1a0000, #000);
+            border-bottom: 3px solid var(--brand-red);
+        }
+
+        .site-title {
+            color: var(--brand-red);
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+            letter-spacing: 2px;
+        }
+
+        .promo-bar {
+            background: rgba(255, 0, 0, 0.1);
+            color: var(--text-gold);
+            padding: 12px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            text-transform: uppercase;
+        }
+
+        .search-container {
+            margin: 25px auto;
+            max-width: 500px;
+            padding: 0 20px;
+        }
+
+        #appSearch {
+            width: 100%;
+            padding: 15px 25px;
+            border-radius: 50px;
+            border: 2px solid #333;
+            background: #222;
+            color: white;
+            outline: none;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        #appSearch:focus { border-color: var(--brand-red); box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); }
+
+        .container { padding: 10px 20px 20px 20px; max-width: 1200px; margin: auto; }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 15px;
+        }
+
+        .app-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 20px 15px;
+            text-align: center;
+            border: 1px solid #2a2a2a;
+            transition: transform 0.2s ease, background 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .app-card:hover { transform: translateY(-5px); background: var(--card-hover); border-color: var(--brand-red); }
+
+        .app-icon-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 20px;
+            margin: 0 auto 15px auto;
+            object-fit: cover;
+            background: #333;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+        }
+
+        .app-name { 
+            font-weight: 700; font-size: 15px; margin-bottom: 15px; min-height: 40px;
+            display: flex; align-items: center; justify-content: center;
+        }
+
+        .dl-btn {
+            background: var(--brand-red);
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 12px;
+            font-weight: 800;
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .disclaimer-section {
+            max-width: 900px; margin: 50px auto; padding: 30px;
+            background: #111; border: 1px solid #222; border-radius: 15px;
+            color: var(--muted-gray); line-height: 1.6;
+        }
+
+        .disclaimer-section h2 { color: var(--brand-red); font-size: 18px; text-transform: uppercase; margin-bottom: 15px; }
+
+        footer { text-align: center; padding: 40px; color: #444; font-size: 12px; border-top: 1px solid #1a1a1a; }
+
+        @media (max-width: 480px) { .app-grid { grid-template-columns: repeat(2, 1fr); } .site-title { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+
+<header><h1 class="site-title">YONO ZONE</h1></header>
+
+<div class="promo-bar">
+    <a href="https://t.me/Freee_Loot" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #0088cc; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: bold;">JOIN TELEGRAM FOR LOOTS</a>
+</div>
+
+<div class="search-container">
+    <input type="text" id="appSearch" onkeyup="searchApps()" placeholder="Search for games...">
+</div>
+
+<div class="container">
+    <div class="app-grid" id="appGrid">
+        
+        <div class="app-card">
+            <img src="https://i.ibb.co/kVMY79FH/IMG-20260419-113253.png" class="app-icon-img" alt="Jaiho Slots">
+            <div class="app-name">Jaiho Slots</div>
+            <a href="download.html?name=Jaiho+Slots&img=https://i.ibb.co/kVMY79FH/IMG-20260419-113253.png&url=https://www.jaihoslots26.com/?code=EGPQLKWNJ3K" class="dl-btn">Download</a>
+        </div>
+
+        <div class="app-card">
+            <img src="https://i.ibb.co/F4dPvT6G/IMG-20260419-113307.png" class="app-icon-img" alt="ABC Rummy">
+            <div class="app-name">ABC Rummy</div>
+            <a href="download.html?name=ABC+Rummy&img=https://i.ibb.co/F4dPvT6G/IMG-20260419-113307.png&url=https://www.abcrummy8.com/?code=75C7DT6BVKJ" class="dl-btn">Download</a>
+        </div>
+
+        <div class="app-card">
+            <img src="https://i.ibb.co/SXdD3cLP/IMG-20260419-113323.png" class="app-icon-img" alt="Share Slots">
+            <div class="app-name">Share Slots</div>
+            <a href="download.html?name=Share+Slots&img=https://i.ibb.co/SXdD3cLP/IMG-20260419-113323.png&url=https://share977.com/?code=YAZTDXLF9BE" class="dl-btn">Download</a>
+        </div>
+
+        <div class="app-card">
+            <img src="https://i.ibb.co/8LYgyFFc/IMG-20260419-114350.png" class="app-icon-img" alt="Rumble Rummy">
+            <div class="app-name">Rumble Rummy</div>
+            <a href="download.html?name=Rumble+Rummy&img=https://i.ibb.co/8LYgyFFc/IMG-20260419-114350.png&url=https://www.rumblerummy2.vip/?code=UC0W337QWVY" class="dl-btn">Download</a>
+        </div>
+
+        <div class="app-card">
+            <img src="https://i.ibb.co/8gsXXv7P/IMG-20260419-113347.png" class="app-icon-img" alt="Boss Rummy">
+            <div class="app-name">Boss Rummy</div>
+            <a href="download.html?name=Boss+Rummy&img=https://i.ibb.co/8gsXXv7P/IMG-20260419-113347.png&url=https://bossrummyvv.com/?code=9HFBVC67BXH" class="dl-btn">Download</a>
+        </div>
+
+        <div class="app-card">
+            <img src="https://i.ibb.co/nNkcf91W/IMG-20260419-113412.png" class="app-icon-img" alt="Jaiho Arcade">
+            <div class="app-name">Jaiho Arcade</div>
+            <a href="download.html?name=Jaiho+Arcade&img=https://i.ibb.co/nNkcf91W/IMG-20260419-113412.png&url=https://jaihoarcade19.com/?code=AZDKM9CQHF5" class="dl-btn">Download</a>
+        </div>
+
+        <div class="app-card">
+            <img src="https://i.ibb.co/3mqMW41m/IMG-20260419-113437.png" class="app-icon-img" alt="Club INR">
+            <div class="app-name">Club INR</div>
+            <a href="download.html?name=Club+INR&img=https://i.ibb.co/3mqMW41m/IMG-20260419-113437.png&url=https://clubinr1.vip/?code=9VCBY6TE5GU" class="dl-btn">Download</a>
+        </div>
+
+        <div class="app-card">
+            <img src="https://i.ibb.co/bjXdbYcx/IMG-20260419-113448.png" class="app-icon-img" alt="Maha Games">
+            <div class="app-name">Maha Games</div>
+            <a href="download.html?name=Maha+Games&img=https://i.ibb.co/bjXdbYcx/IMG-20260419-113448.png&url=https://mahagames.mobi/?code=J24824X5N1W" class="dl-btn">Download</a>
+        </div>
+
+        <div class="app-card">
+            <img src="https://i.ibb.co/DDsSsCDd/IMG-20260419-113500.png" class="app-icon-img" alt="Hi Rummy">
+            <div class="app-name">Hi Rummy</div>
+            <a href="download.html?name=Hi+Rummy&img=https://i.ibb.co/DDsSsCDd/IMG-20260419-113500.png&url=https://www.hirummyrefer.club/?code=RX3JJGSPTBL" class="dl-btn">Download</a>
+        </div>
+
+        <div class="app-card">
+            <img src="https://i.ibb.co/nqYXhfrv/IMG-20260419-113513.png" class="app-icon-img" alt="Jaiho Win">
+            <div class="app-name">Jaiho Win</div>
+            <a href="download.html?name=Jaiho+Win&img=https://i.ibb.co/nqYXhfrv/IMG-20260419-113513.png&url=https://jaihowin20.com/?code=1XN3HNN293P" class="dl-btn">Download</a>
+        </div>
+
+        <div class="app-card">
+            <img src="https://i.ibb.co/j92yXvGF/IMG-20260419-113525.png" class="app-icon-img" alt="Gogo Rummy">
+            <div class="app-name">Gogo Rummy</div>
+            <a href="download.html?name=Gogo+Rummy&img=https://i.ibb.co/j92yXvGF/IMG-20260419-113525.png&url=https://www.gogogo777.link/?code=8FW2CEF67CM" class="dl-btn">Download</a>
+        </div>
+
+        <div class="app-card">
+            <img src="https://i.ibb.co/7xxpN2rQ/IMG-20260419-113540.png" class="app-icon-img" alt="Yono 777">
+            <div class="app-name">Yono 777</div>
+            <a href="download.html?name=Yono+777&img=https://i.ibb.co/7xxpN2rQ/IMG-20260419-113540.png&url=https://yono777deposit.net/?code=F9MXUHWP2JM" class="dl-btn">Download</a>
+        </div>
+
+        <div class="app-card">
+            <img src="https://i.ibb.co/TBv7SF2c/IMG-20260419-113557.png" class="app-icon-img" alt="IND Club">
+            <div class="app-name">IND Club</div>
+            <a href="download.html?name=IND+Club&img=https://i.ibb.co/TBv7SF2c/IMG-20260419-113557.png&url=https://indclub25.com/?code=34UNRG7XUK8" class="dl-btn">Download</a>
+        </div>
+
+        <div class="app-card">
+            <img src="https://i.ibb.co/cX1rXjpq/IMG-20260419-114913.png" class="app-icon-img" alt="Jaiho Rummy">
+            <div class="app-name">Jaiho Rummy</div>
+            <a href="download.html?name=Jaiho+Rummy&img=https://i.ibb.co/cX1rXjpq/IMG-20260419-114913.png&url=https://jaihorummy.ltd/?code=E74EK57PWKA" class="dl-btn">Download</a>
+        </div>
+    </div>
+</div>
+
+<footer><p>&copy; 2026 YONOZONE | Official APK Hub | All Rights Reserved</p></footer>
+
+<script>
+    function searchApps() {
+        let input = document.getElementById('appSearch').value.toLowerCase();
+        let cards = document.getElementsByClassName('app-card');
+        for (let i = 0; i < cards.length; i++) {
+            let name = cards[i].getElementsByClassName('app-name')[0].innerText.toLowerCase();
+            cards[i].style.display = name.includes(input) ? "" : "none";
+        }
+    }
+</script>
+</body>
+</html>
